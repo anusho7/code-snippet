@@ -1,5 +1,5 @@
 /**
- * Skill Softy Mock Data
+ * Skill Sync Mock Data
  * Realistic JSON data for Students, Industry Partners, and Faculty.
  */
 
@@ -131,7 +131,7 @@ export const QUESTIONNAIRE_DATA = {
     },
     {
       id: 'primaryNeed',
-      question: 'What is your primary focus on Skill Softy?',
+      question: 'What is your primary focus on Skill Sync?',
       subtitle: 'You can access all tools anytime from your dashboard.',
       type: 'single',
       options: [
@@ -487,7 +487,7 @@ export const MOCK_EVENTS = [
     id: 'e1',
     title: 'Masterclass: Scaling Next.js 15 & Server Components to 10M Pageviews',
     category: 'Industry Workshop',
-    provider: 'Vercel & Skill Softy',
+    provider: 'Vercel & Skill Sync',
     date: 'Saturday, Aug 30 · 4:00 PM IST',
     duration: '2.5 Hours',
     speaker: 'Siddharth Rao, Staff Architect @ Vercel',
@@ -503,7 +503,7 @@ export const MOCK_EVENTS = [
     id: 'e2',
     title: 'National 48-Hour GenAI Buildathon 2026',
     category: 'Hackathon',
-    provider: 'OpenAI, AWS & Skill Softy',
+    provider: 'OpenAI, AWS & Skill Sync',
     date: 'Sep 12-14, 2026',
     duration: '48 Hours',
     speaker: '12 Industry Judges & Mentors',
@@ -519,7 +519,7 @@ export const MOCK_EVENTS = [
     id: 'e3',
     title: 'National FDP: Modernizing CS Curriculum with Microservices & Cloud Native',
     category: 'Faculty FDP',
-    provider: 'Skill Softy Academic Alliance & IEEE',
+    provider: 'Skill Sync Academic Alliance & IEEE',
     date: 'Sep 5-7, 2026',
     duration: '3 Days Virtual FDP',
     speaker: 'Prof. Arvind Kumar (IIT-D) & Dr. Maya S (AWS)',
@@ -553,7 +553,7 @@ export const MOCK_COURSES = [
   {
     id: 'c1',
     title: 'Production Full-Stack Cloud Engineering Bootcamp',
-    provider: 'Skill Softy Industry Alliance',
+    provider: 'Skill Sync Industry Alliance',
     instructor: 'Lead Architects from Razorpay & Swiggy',
     enrolledCount: 3420,
     rating: 4.9,

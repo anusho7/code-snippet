@@ -44,7 +44,7 @@ export const RoleSelection = () => {
       </h1>
 
       <p className="role-selection__subtitle">
-        Skill Softy connects students, industry leaders, and university faculty into a
+        Skill Sync connects students, industry leaders, and university faculty into a
         unified ecosystem of custom roadmaps, verified skill gap analysis, and fast-track hiring.
       </p>
 

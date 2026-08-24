@@ -1,5 +1,5 @@
 /**
- * Skill Softy Color Palette & Design Tokens
+ * Skill Sync Color Palette & Design Tokens
  * Features: Warm sunny yellow background, energetic orange cards & buttons,
  * dark obsidian accents, clean glassmorphism surfaces.
  */
@@ -12,7 +12,7 @@ export const colors = {
   backgroundElevated: '#FFFFFF', // Pure White for Cards
 
   // Brand Orange Accent (Cards, Primary Buttons, Highlights)
-  primary: '#FF6B00',           // Signature Skill Softy Orange
+  primary: '#FF6B00',           // Signature Skill Sync Orange
   primaryHover: '#E65800',      // Deep Orange on Hover
   primaryActive: '#CC4700',     // Active Press State
   primaryLight: '#FFF1E5',      // Soft Orange Tint for Badges/Pills
