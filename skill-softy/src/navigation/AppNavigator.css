@@ -15,34 +15,59 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.75rem;
-  padding: 0.5rem 0.6rem;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding: 0.35rem;
   background: var(--bg-surface);
   border: 1.5px solid var(--color-border);
   border-radius: var(--radius-full);
   box-shadow: var(--shadow-sm);
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.dashboard-subnav::-webkit-scrollbar {
+  display: none;
 }
 
 .dashboard-subnav__tabs {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+@media (min-width: 680px) {
+  .dashboard-subnav__tabs {
+    width: auto;
+  }
 }
 
 .dashboard-subnav__tab {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.5rem 1.1rem;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.85rem;
   border-radius: var(--radius-full);
-  font-size: 0.88rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: var(--color-text-muted);
   transition: all var(--transition-fast);
   cursor: pointer;
   white-space: nowrap;
+  flex: 1;
+  text-align: center;
+  min-height: 40px;
+}
+
+@media (min-width: 680px) {
+  .dashboard-subnav__tab {
+    flex: initial;
+    padding: 0.5rem 1.1rem;
+    font-size: 0.88rem;
+  }
 }
 
 .dashboard-subnav__tab:hover {
@@ -57,13 +82,13 @@
 }
 
 .dashboard-subnav__quick-links {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 0.5rem;
 }
 
-@media (max-width: 680px) {
+@media (min-width: 840px) {
   .dashboard-subnav__quick-links {
-    display: none;
+    display: flex;
   }
 }

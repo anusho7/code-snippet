@@ -2,30 +2,39 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
-  margin-bottom: 1.5rem;
+  padding: 0.85rem 0;
+  margin-bottom: 1rem;
   border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
-  background: rgba(255, 249, 230, 0.85);
+  background: rgba(255, 249, 230, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   z-index: 100;
+  gap: 0.5rem;
 }
 
 .top-header__brand {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .top-header__logo {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   border-radius: var(--radius-md);
   box-shadow: 0 4px 12px rgba(255, 107, 0, 0.25);
   transition: transform var(--transition-fast);
+}
+
+@media (min-width: 768px) {
+  .top-header__logo {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 .top-header__brand:hover .top-header__logo {
@@ -39,13 +48,13 @@
 
 .top-header__title {
   font-family: var(--font-heading);
-  font-size: 1.45rem;
+  font-size: clamp(1.1rem, 4vw, 1.45rem);
   font-weight: 800;
   color: var(--color-text-main);
   letter-spacing: -0.03em;
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.25rem;
 }
 
 .top-header__title-accent {
@@ -54,34 +63,48 @@
 }
 
 .top-header__tagline {
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 600;
   color: var(--color-text-subtle);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
-.top-header__nav-pills {
-  display: none;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.7);
-  padding: 0.25rem;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--color-border);
-}
-
-@media (min-width: 900px) {
-  .top-header__nav-pills {
-    display: flex;
+@media (max-width: 480px) {
+  .top-header__tagline {
+    display: none;
   }
 }
 
+/* Fix 1: Top Navigation Pills Horizontal Scroll & No Scrollbar */
+.top-header__nav-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.25rem 0.4rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  max-width: 100%;
+}
+
+.top-header__nav-pills::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 .top-header__nav-pill {
-  padding: 0.4rem 0.9rem;
-  font-size: 0.85rem;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--color-text-muted);
   border-radius: var(--radius-full);
   transition: all var(--transition-fast);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .top-header__nav-pill:hover {
@@ -98,22 +121,24 @@
 .top-header__actions {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.4rem;
+  flex-shrink: 0;
 }
 
 .top-header__role-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.4rem 0.85rem;
+  gap: 0.3rem;
+  padding: 0.3rem 0.65rem;
   background: #FFF0C2;
   border: 1px solid #F5D78A;
   border-radius: var(--radius-full);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
   color: #8C4300;
   cursor: pointer;
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 
 .top-header__role-badge:hover {
@@ -122,8 +147,8 @@
 }
 
 .top-header__icon-btn {
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
   border-radius: var(--radius-full);
   background: #FFFFFF;
   border: 1px solid var(--color-border);
@@ -133,6 +158,7 @@
   color: var(--color-text-main);
   position: relative;
   transition: all var(--transition-fast);
+  flex-shrink: 0;
 }
 
 .top-header__icon-btn:hover {
@@ -143,11 +169,11 @@
 
 .top-header__badge-dot {
   position: absolute;
-  top: 6px;
-  right: 6px;
-  width: 8px;
-  height: 8px;
+  top: 4px;
+  right: 4px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: var(--color-primary);
-  border: 2px solid #FFFFFF;
+  border: 1.5px solid #FFFFFF;
 }

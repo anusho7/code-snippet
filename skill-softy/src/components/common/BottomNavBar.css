@@ -1,20 +1,20 @@
 .bottom-nav-bar {
-  position: fixed;
+  position: absolute;
   bottom: 1.25rem;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 2.5rem);
-  max-width: 680px;
-  background: rgba(30, 27, 24, 0.94);
+  width: calc(100% - 1.25rem);
+  max-width: 388px;
+  background: rgba(30, 27, 24, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-full);
-  padding: 0.45rem 0.6rem;
+  padding: 0.35rem 0.4rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
   z-index: 999;
 }
 
@@ -23,23 +23,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.25rem;
-  padding: 0.5rem 1rem;
+  gap: 0.15rem;
+  padding: 0.4rem 0.4rem;
   color: #A39D95;
   border-radius: var(--radius-full);
   transition: all var(--transition-fast);
   flex: 1;
   position: relative;
+  min-height: 42px;
 }
 
-.bottom-nav-bar__item:hover {
+.bottom-nav-bar__item:hover,
+.bottom-nav-bar__item:active {
   color: #FFFFFF;
 }
 
 .bottom-nav-bar__item.active {
   color: #FFFFFF;
   background: linear-gradient(135deg, #FF7A00 0%, #FF5500 100%);
-  box-shadow: 0 4px 16px rgba(255, 107, 0, 0.4);
+  box-shadow: 0 4px 14px rgba(255, 107, 0, 0.45);
 }
 
 .bottom-nav-bar__icon {
@@ -49,7 +51,7 @@
 }
 
 .bottom-nav-bar__label {
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.01em;
   white-space: nowrap;
@@ -57,29 +59,13 @@
 
 .bottom-nav-bar__badge {
   position: absolute;
-  top: 4px;
-  right: 18%;
+  top: 2px;
+  right: 8%;
   background: #FF3E00;
   color: #FFFFFF;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   font-weight: 800;
-  padding: 0.1rem 0.35rem;
+  padding: 0.06rem 0.3rem;
   border-radius: var(--radius-full);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-@media (max-width: 480px) {
-  .bottom-nav-bar {
-    bottom: 0.75rem;
-    width: calc(100% - 1.5rem);
-    padding: 0.35rem 0.4rem;
-  }
-  
-  .bottom-nav-bar__item {
-    padding: 0.45rem 0.5rem;
-  }
-
-  .bottom-nav-bar__label {
-    font-size: 0.65rem;
-  }
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
