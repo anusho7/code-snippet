@@ -1,20 +1,20 @@
 .bottom-nav-bar {
-  position: absolute;
-  bottom: 1.25rem;
+  position: fixed;
+  bottom: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 1.25rem);
-  max-width: 388px;
-  background: rgba(30, 27, 24, 0.95);
+  width: calc(100% - 2rem);
+  max-width: 540px;
+  background: rgba(26, 24, 21, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-full);
-  padding: 0.35rem 0.4rem;
+  padding: 0.4rem 0.6rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
   z-index: 999;
 }
 
