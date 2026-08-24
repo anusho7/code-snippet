@@ -3,7 +3,7 @@ import { useUser } from '../../store/UserState';
 import { MOCK_COURSES, MOCK_EVENTS } from '../../utils/mockData';
 import { EventCard } from '../../components/cards/EventCard';
 import { PrimaryButton } from '../../components/common/PrimaryButton';
-import { GraduationCap, Award, Plus, Sparkles, BookOpen, Layers } from 'lucide-react';
+import { GraduationCap, Award, Plus, BookOpen, Layers } from 'lucide-react';
 
 export const IndCoursesTab = () => {
   const { showToast } = useUser();
@@ -50,7 +50,6 @@ export const IndCoursesTab = () => {
 
       {/* Live Sponsored Tracks */}
       <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <Sparkles size={18} color="#588B71" />
         <span>Active Industry-Sponsored Curriculum Tracks</span>
       </h3>
 

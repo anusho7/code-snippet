@@ -32,7 +32,6 @@ import {
   Users,
   Building2,
   GraduationCap,
-  Sparkles,
   Network,
   CalendarCheck,
   Map,
@@ -112,7 +111,7 @@ export const AppNavigator = () => {
     }
     if (role === 'faculty') {
       return [
-        { id: 'learn', label: 'Learn (FDP Programs)', icon: Sparkles },
+        { id: 'learn', label: 'Learn (FDP Programs)', icon: GraduationCap },
         { id: 'collab', label: 'Industry Mentors & Collab', icon: Network },
         { id: 'attend', label: 'Conferences & Summits', icon: CalendarCheck }
       ];

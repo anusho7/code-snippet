@@ -7,7 +7,6 @@ import {
   Users,
   Building2,
   GraduationCap,
-  Sparkles,
   Network,
   CalendarCheck,
   Map,
@@ -24,7 +23,7 @@ export const BottomNavBar = () => {
   // Student Nav Items
   const studentNavItems = [
     { id: 'study', label: 'Study', icon: BookOpen, action: () => { setScreen('dashboard'); setActiveTab('study'); } },
-    { id: 'get-hired', label: 'Get Hired', icon: Briefcase, badge: 'Hot', action: () => { setScreen('dashboard'); setActiveTab('get-hired'); } },
+    { id: 'get-hired', label: 'Get Hired', icon: Briefcase, action: () => { setScreen('dashboard'); setActiveTab('get-hired'); } },
     { id: 'roadmap', label: 'Roadmap', icon: Map, isScreen: true, screenName: 'roadmap', action: () => setScreen('roadmap') },
     { id: 'attend', label: 'Attend', icon: Calendar, action: () => { setScreen('dashboard'); setActiveTab('attend'); } }
   ];
@@ -39,7 +38,7 @@ export const BottomNavBar = () => {
 
   // Faculty Nav Items
   const facultyNavItems = [
-    { id: 'learn', label: 'Learn (FDP)', icon: Sparkles, action: () => { setScreen('dashboard'); setActiveTab('learn'); } },
+    { id: 'learn', label: 'Learn (FDP)', icon: GraduationCap, action: () => { setScreen('dashboard'); setActiveTab('learn'); } },
     { id: 'collab', label: 'Collab & Mentors', icon: Network, badge: 'New', action: () => { setScreen('dashboard'); setActiveTab('collab'); } },
     { id: 'attend', label: 'Attend', icon: CalendarCheck, action: () => { setScreen('dashboard'); setActiveTab('attend'); } },
     { id: 'comparison', label: 'Curriculum Gap', icon: Compass, isScreen: true, screenName: 'comparison', action: () => setScreen('comparison') }

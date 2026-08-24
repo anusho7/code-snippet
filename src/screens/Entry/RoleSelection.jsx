@@ -7,7 +7,6 @@ import {
   Building2,
   BookOpenCheck,
   ArrowRight,
-  Sparkles,
   CheckCircle2,
   Users2,
   Briefcase,
@@ -33,7 +32,6 @@ export const RoleSelection = () => {
     <div className="role-selection animate-fade-in">
       {/* Hero Badge */}
       <div className="role-selection__hero-badge">
-        <Sparkles size={16} color="#588B71" />
         <span>Select Your Workspace to Begin</span>
       </div>
 

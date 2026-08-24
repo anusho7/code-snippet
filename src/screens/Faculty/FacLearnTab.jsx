@@ -2,7 +2,7 @@ import React from 'react';
 import { useUser } from '../../store/UserState';
 import { MOCK_FACULTY_PROGRAMS } from '../../utils/mockData';
 import { PrimaryButton } from '../../components/common/PrimaryButton';
-import { Sparkles, BookOpenCheck, Award, Clock, Download, CheckCircle2 } from 'lucide-react';
+import { BookOpenCheck, Award, Clock, Download, CheckCircle2 } from 'lucide-react';
 
 export const FacLearnTab = () => {
   const { showToast } = useUser();
@@ -32,7 +32,6 @@ export const FacLearnTab = () => {
       }}>
         <div>
           <div className="badge badge-amber" style={{ marginBottom: '0.4rem' }}>
-            <Sparkles size={13} />
             <span>Academic Upskilling & FDP Portal</span>
           </div>
           <h2 style={{ fontSize: '1.75rem', fontWeight: 800 }}>Faculty Development Programs (FDPs)</h2>

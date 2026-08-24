@@ -7,7 +7,6 @@ import {
   User,
   Users,
   CheckCircle2,
-  Sparkles,
   Award
 } from 'lucide-react';
 import './EventCard.css';
@@ -37,7 +36,7 @@ export const EventCard = ({ event }) => {
         </span>
         {event.badge && (
           <span className="event-card__badge-perk">
-            ✨ {event.badge}
+            {event.badge}
           </span>
         )}
       </div>
@@ -76,7 +75,7 @@ export const EventCard = ({ event }) => {
           variant={isRegistered ? 'outline' : 'primary'}
           size="sm"
           onClick={() => toggleRegisterEvent(event.id)}
-          icon={isRegistered ? <CheckCircle2 size={15} /> : <Sparkles size={15} />}
+          icon={isRegistered ? <CheckCircle2 size={15} /> : null}
         >
           {isRegistered ? 'Registered (RSVP)' : 'Register Free'}
         </PrimaryButton>

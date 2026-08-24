@@ -2,7 +2,7 @@ import React from 'react';
 import { useUser } from '../../store/UserState';
 import { MOCK_COLLAB_REQUESTS } from '../../utils/mockData';
 import { PrimaryButton } from '../../components/common/PrimaryButton';
-import { Network, Building2, User, Calendar, Check, Send, Sparkles } from 'lucide-react';
+import { Network, Building2, User, Calendar, Check, Send } from 'lucide-react';
 
 export const FacCollabTab = () => {
   const { invitedCollabs, inviteCollab, showToast } = useUser();

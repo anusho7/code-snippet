@@ -179,6 +179,20 @@
   border-color: var(--color-primary-border);
 }
 
+.top-header__profile-btn {
+  background: #588B71;
+  color: #FFFFFF;
+  border: 1.5px solid #47735C;
+  box-shadow: 0 2px 8px rgba(88, 139, 113, 0.25);
+}
+
+.top-header__profile-btn:hover {
+  background: #47735C;
+  color: #FFFFFF;
+  border-color: #365B47;
+  transform: translateY(-1px) scale(1.05);
+}
+
 .top-header__badge-dot {
   position: absolute;
   top: 4px;

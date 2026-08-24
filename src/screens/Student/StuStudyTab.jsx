@@ -9,7 +9,6 @@ import {
   CheckCircle2,
   Clock,
   Map,
-  Sparkles,
   ArrowRight
 } from 'lucide-react';
 
@@ -58,7 +57,6 @@ export const StuStudyTab = () => {
 
       {/* Enrolled Tracks Grid */}
       <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <Sparkles size={18} color="#588B71" />
         <span>Active Learning Tracks</span>
       </h3>
 

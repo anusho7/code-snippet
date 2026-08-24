@@ -3,7 +3,6 @@ import { useUser } from '../../store/UserState';
 import { SKILL_COMPARISON_DATA } from '../../utils/mockData';
 import { PrimaryButton } from '../../components/common/PrimaryButton';
 import {
-  Sparkles,
   BookOpen,
   Zap,
   ArrowRight,
@@ -34,7 +33,6 @@ export const SkillComparison = () => {
       {/* Header */}
       <div className="skill-comparison__header">
         <div className="skill-comparison__badge">
-          <Sparkles size={14} />
           <span>Curriculum vs Industry Benchmarks</span>
         </div>
 

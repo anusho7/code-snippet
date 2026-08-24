@@ -2,7 +2,6 @@ import React from 'react';
 import { useUser } from '../../store/UserState';
 import { PrimaryButton } from '../common/PrimaryButton';
 import {
-  Sparkles,
   GitBranch,
   Star,
   ExternalLink,
@@ -48,7 +47,6 @@ export const PortfolioCard = ({ student }) => {
           <div className="portfolio-card__name-row">
             <h3 className="portfolio-card__name">{student.name}</h3>
             <span className="portfolio-card__match-badge">
-              <Sparkles size={12} />
               {student.matchScore}% Match
             </span>
           </div>
@@ -120,7 +118,7 @@ export const PortfolioCard = ({ student }) => {
           size="sm"
           fullWidth
           onClick={handleInterviewInvite}
-          icon={<Sparkles size={16} />}
+          icon={<ExternalLink size={16} />}
         >
           Invite Interview
         </PrimaryButton>

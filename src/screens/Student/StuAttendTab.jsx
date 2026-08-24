@@ -1,19 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useUser } from '../../store/UserState';
 import { MOCK_EVENTS } from '../../utils/mockData';
 import { EventCard } from '../../components/cards/EventCard';
-import { Calendar, Search, Sparkles, Trophy } from 'lucide-react';
+import { Calendar, Trophy } from 'lucide-react';
 
 export const StuAttendTab = () => {
   const { registeredEvents } = useUser();
-  const [filterCategory, setFilterCategory] = useState('All');
-
-  const categories = ['All', 'Workshop', 'Hackathon', 'Guest Lecture'];
-
-  const filteredEvents = MOCK_EVENTS.filter(event => {
-    if (filterCategory === 'All') return true;
-    return event.category.toLowerCase().includes(filterCategory.toLowerCase());
-  });
 
   return (
     <div className="tab-view animate-fade-in">
@@ -60,36 +52,13 @@ export const StuAttendTab = () => {
         </div>
       </div>
 
-      {/* Filter Category Pills */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1.5rem' }}>
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setFilterCategory(cat)}
-            style={{
-              padding: '0.4rem 0.95rem',
-              borderRadius: 'var(--radius-full)',
-              fontSize: '0.85rem',
-              fontWeight: 700,
-              cursor: 'pointer',
-              transition: 'all 0.15s ease',
-              border: filterCategory === cat ? '1.5px solid var(--color-primary)' : '1px solid var(--color-border)',
-              background: filterCategory === cat ? 'var(--color-primary)' : 'var(--bg-surface)',
-              color: filterCategory === cat ? '#FFFFFF' : 'var(--color-text-main)'
-            }}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
-
       {/* Events Grid */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: '1fr',
         gap: '1rem'
       }}>
-        {filteredEvents.map((event) => (
+        {MOCK_EVENTS.map((event) => (
           <EventCard key={event.id} event={event} />
         ))}
       </div>

@@ -4,7 +4,6 @@ import { INDUSTRY_MATCH_DATA } from '../../utils/mockData';
 import { PrimaryButton } from '../../components/common/PrimaryButton';
 import {
   Compass,
-  Sparkles,
   Building,
   TrendingUp,
   Briefcase,
@@ -78,7 +77,6 @@ export const IndustryMatch = () => {
               </div>
 
               <div className="match-role-card__score-badge">
-                <Sparkles size={14} />
                 <span>{roleItem.matchScore}% Match</span>
               </div>
             </div>

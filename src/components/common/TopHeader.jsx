@@ -1,21 +1,19 @@
 import React from 'react';
 import { useUser } from '../../store/UserState';
-import { Sparkles, Bell, ArrowLeftRight, Compass, Map, UserCheck } from 'lucide-react';
+import { Bell, User } from 'lucide-react';
 import skillSyncLogo from '../../assets/skill-sync-logo.png';
 import './TopHeader.css';
 
 export const TopHeader = () => {
-  const { role, screen, setScreen, showToast } = useUser();
+  const { role, setScreen, showToast } = useUser();
 
   const handleNotificationClick = () => {
     showToast('You have 3 new matched recommendations for your roadmap!', 'info');
   };
 
-  const getRoleLabel = () => {
-    if (role === 'student') return 'Student View';
-    if (role === 'industry') return 'Industry View';
-    if (role === 'faculty') return 'Faculty View';
-    return 'Select Role';
+  const handleProfileClick = () => {
+    setScreen('entry');
+    showToast(`Profile (${role ? role.toUpperCase() : 'STUDENT'}): Click to switch role.`, 'info');
   };
 
   return (
@@ -36,18 +34,16 @@ export const TopHeader = () => {
           </div>
         </div>
 
-
-
         {/* Actions */}
         <div className="top-header__actions">
-          {/* Role Switcher Pill */}
+          {/* Profile Icon Button */}
           <button
-            className="top-header__role-badge"
-            onClick={() => setScreen('entry')}
-            title="Switch Role"
+            className="top-header__icon-btn top-header__profile-btn"
+            onClick={handleProfileClick}
+            aria-label="User Profile"
+            title="Profile & Switch Role"
           >
-            <ArrowLeftRight size={14} />
-            <span>{getRoleLabel()}</span>
+            <User size={18} />
           </button>
 
           {/* Notifications Icon */}
@@ -55,6 +51,7 @@ export const TopHeader = () => {
             className="top-header__icon-btn"
             onClick={handleNotificationClick}
             aria-label="View notifications"
+            title="Notifications"
           >
             <Bell size={18} />
             <span className="top-header__badge-dot"></span>

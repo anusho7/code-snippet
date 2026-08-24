@@ -6,7 +6,6 @@ import {
   Map,
   Check,
   Clock,
-  Sparkles,
   ArrowRight,
   Code2,
   Compass,

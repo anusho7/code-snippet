@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useUser } from '../../store/UserState';
 import { QUESTIONNAIRE_DATA } from '../../utils/mockData';
 import { PrimaryButton } from '../../components/common/PrimaryButton';
-import { ArrowRight, ArrowLeft, Check, Sparkles } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Check } from 'lucide-react';
 import './Questionnaire.css';
 
 export const Questionnaire = () => {
@@ -44,7 +44,6 @@ export const Questionnaire = () => {
       {/* Header & Step Tracker */}
       <div className="questionnaire__header">
         <div className="questionnaire__step-indicator">
-          <Sparkles size={14} />
           <span>Step {currentStep + 1} of {questions.length}</span>
         </div>
 

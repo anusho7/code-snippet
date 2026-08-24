@@ -2,7 +2,7 @@ import React from 'react';
 import { useUser } from '../../store/UserState';
 import { MOCK_EVENTS } from '../../utils/mockData';
 import { EventCard } from '../../components/cards/EventCard';
-import { CalendarCheck, Sparkles, BookOpen } from 'lucide-react';
+import { CalendarCheck, BookOpen } from 'lucide-react';
 
 export const FacAttendTab = () => {
   const { registeredEvents } = useUser();
@@ -47,7 +47,7 @@ export const FacAttendTab = () => {
           alignItems: 'center',
           gap: '0.75rem'
         }}>
-          <Sparkles size={20} color="#588B71" />
+          <CalendarCheck size={20} color="#588B71" />
           <div>
             <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Registered Sessions</div>
             <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--color-text-main)' }}>
