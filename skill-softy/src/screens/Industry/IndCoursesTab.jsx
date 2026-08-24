@@ -50,15 +50,15 @@ export const IndCoursesTab = () => {
 
       {/* Live Sponsored Tracks */}
       <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <Sparkles size={18} color="#FF6B00" />
+        <Sparkles size={18} color="#588B71" />
         <span>Active Industry-Sponsored Curriculum Tracks</span>
       </h3>
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-        gap: '1.5rem',
-        marginBottom: '2.5rem'
+        gridTemplateColumns: '1fr',
+        gap: '1rem',
+        marginBottom: '2rem'
       }}>
         {MOCK_COURSES.map((course) => (
           <div key={course.id} style={{
@@ -126,14 +126,14 @@ export const IndCoursesTab = () => {
 
       {/* Hackathons & Workshops */}
       <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <Layers size={18} color="#FF6B00" />
+        <Layers size={18} color="#588B71" />
         <span>Live Hackathons & Masterclasses</span>
       </h3>
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-        gap: '1.5rem'
+        gridTemplateColumns: '1fr',
+        gap: '1rem'
       }}>
         {MOCK_EVENTS.filter(e => e.category !== 'Faculty FDP').map((event) => (
           <EventCard key={event.id} event={event} />

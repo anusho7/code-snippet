@@ -1,11 +1,11 @@
 .bottom-nav-bar {
   position: fixed;
-  bottom: 1.5rem;
+  bottom: 1.25rem;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 2rem);
-  max-width: 540px;
-  background: rgba(26, 24, 21, 0.92);
+  width: calc(100% - 1.5rem);
+  max-width: 480px;
+  background: rgba(30, 27, 24, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -14,8 +14,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
-  z-index: 999;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.35);
+  z-index: 1500;
 }
 
 .bottom-nav-bar__item {
@@ -40,8 +40,8 @@
 
 .bottom-nav-bar__item.active {
   color: #FFFFFF;
-  background: linear-gradient(135deg, #FF7A00 0%, #FF5500 100%);
-  box-shadow: 0 4px 14px rgba(255, 107, 0, 0.45);
+  background: linear-gradient(135deg, #6B9E82 0%, #4A7861 100%);
+  box-shadow: 0 4px 14px rgba(88, 139, 113, 0.45);
 }
 
 .bottom-nav-bar__icon {
@@ -61,7 +61,7 @@
   position: absolute;
   top: 2px;
   right: 8%;
-  background: #FF3E00;
+  background: #588B71;
   color: #FFFFFF;
   font-size: 0.55rem;
   font-weight: 800;

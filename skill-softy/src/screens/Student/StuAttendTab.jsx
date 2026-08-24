@@ -50,7 +50,7 @@ export const StuAttendTab = () => {
           alignItems: 'center',
           gap: '0.75rem'
         }}>
-          <Trophy size={20} color="#FF6B00" />
+          <Trophy size={20} color="#588B71" />
           <div>
             <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>RSVP Confirmed</div>
             <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--color-text-main)' }}>
@@ -86,8 +86,8 @@ export const StuAttendTab = () => {
       {/* Events Grid */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-        gap: '1.5rem'
+        gridTemplateColumns: '1fr',
+        gap: '1rem'
       }}>
         {filteredEvents.map((event) => (
           <EventCard key={event.id} event={event} />

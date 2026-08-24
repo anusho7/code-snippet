@@ -11,16 +11,16 @@
   --bg-surface-elevated: #FFFFFF;
   --bg-surface-dim: #FFF3D6;
 
-  --color-primary: #FF6B00;
-  --color-primary-hover: #E65800;
-  --color-primary-active: #CC4700;
-  --color-primary-light: #FFF1E5;
-  --color-primary-border: #FFD3B0;
+  --color-primary: #588B71;
+  --color-primary-hover: #4A7861;
+  --color-primary-active: #3F6853;
+  --color-primary-light: #EEF4F0;
+  --color-primary-border: #C2D8CB;
 
-  --color-accent-amber: #FFB800;
-  --color-accent-yellow: #FFE853;
-  --color-accent-peach: #FFA07A;
-  --color-accent-dark-orange: #DD4E00;
+  --color-accent-amber: #7AA68B;
+  --color-accent-yellow: #B5D4C3;
+  --color-accent-peach: #A8C4B4;
+  --color-accent-dark-orange: #3A644D;
 
   --color-text-main: #1E1B18;
   --color-text-muted: #5C5449;
@@ -29,7 +29,7 @@
 
   --color-border: #F0E2C8;
   --color-border-strong: #E2CEAA;
-  --color-border-orange: #FFD5B2;
+  --color-border-orange: #C2D8CB;
 
   --color-success: #10B981;
   --color-success-bg: #E6F9F1;
@@ -45,11 +45,11 @@
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(180, 100, 20, 0.06);
-  --shadow-md: 0 8px 24px rgba(180, 100, 20, 0.10);
-  --shadow-lg: 0 14px 36px rgba(180, 100, 20, 0.14);
-  --shadow-orange: 0 10px 28px rgba(255, 107, 0, 0.28);
-  --shadow-orange-sm: 0 4px 14px rgba(255, 107, 0, 0.22);
+  --shadow-sm: 0 2px 8px rgba(88, 139, 113, 0.08);
+  --shadow-md: 0 8px 24px rgba(88, 139, 113, 0.12);
+  --shadow-lg: 0 14px 36px rgba(88, 139, 113, 0.16);
+  --shadow-orange: 0 10px 28px rgba(88, 139, 113, 0.28);
+  --shadow-orange-sm: 0 4px 14px rgba(88, 139, 113, 0.22);
 
   /* Radius */
   --radius-sm: 8px;
@@ -93,46 +93,46 @@ html, body, #root {
   flex-direction: column;
   background-color: var(--bg-main);
   background-image: 
-    radial-gradient(circle at 10% 10%, rgba(255, 184, 0, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 90% 90%, rgba(255, 107, 0, 0.06) 0%, transparent 50%);
+    radial-gradient(circle at 10% 10%, rgba(88, 139, 113, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(88, 139, 113, 0.06) 0%, transparent 50%);
   position: relative;
 }
 
-/* Main Content Desktop Viewport Container */
+/* Main Content Viewport Container */
 .website-main-content {
   flex: 1;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 1.5rem 1.5rem 5.5rem 1.5rem;
+  padding: 1rem 1rem 5.5rem 1rem;
   display: flex;
   flex-direction: column;
 }
 
 @media (max-width: 640px) {
   .website-main-content {
-    padding: 1rem 0.75rem 5rem 0.75rem;
+    padding: 0.75rem 0.5rem 5rem 0.5rem;
   }
 }
 
 /* Toast Notification Overlay */
 .toast-banner {
   position: fixed;
-  bottom: 2rem;
+  bottom: 5.5rem;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
-  min-width: 300px;
-  max-width: min(90vw, 480px);
+  min-width: 280px;
+  max-width: min(92vw, 450px);
   background: #1E1B18;
   color: #FFFFFF;
-  padding: 0.85rem 1.25rem;
+  padding: 0.75rem 1.15rem;
   border-radius: var(--radius-full);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
   z-index: 2000;
   animation: slideUpFade 0.3s cubic-bezier(0.16, 1, 0.3, 1);

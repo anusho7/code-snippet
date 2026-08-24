@@ -117,7 +117,7 @@ export const SkillRoadmap = () => {
 
             {/* Phase Milestone Project Banner */}
             <div className="roadmap-phase__project-banner">
-              <Code2 size={18} color="#FF6B00" />
+              <Code2 size={18} color="#588B71" />
               <span>{phase.project}</span>
             </div>
           </div>

@@ -83,9 +83,9 @@ export const IndHiringTab = () => {
       {/* Recruitment Metrics Bar */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-        gap: '1rem',
-        marginBottom: '2rem'
+        gridTemplateColumns: 'repeat(2, 1fr)',
+        gap: '0.75rem',
+        marginBottom: '1.5rem'
       }}>
         <div style={{
           background: 'var(--bg-surface)',
@@ -275,8 +275,8 @@ export const IndHiringTab = () => {
       {/* Jobs Grid */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-        gap: '1.5rem'
+        gridTemplateColumns: '1fr',
+        gap: '1rem'
       }}>
         {jobs.map((job) => (
           <JobRoleCard key={job.id} job={job} isRecruiterView={true} />

@@ -54,8 +54,8 @@ export const FacLearnTab = () => {
       {/* FDP Cards Grid */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))',
-        gap: '1.5rem'
+        gridTemplateColumns: '1fr',
+        gap: '1rem'
       }}>
         {MOCK_FACULTY_PROGRAMS.map((fdp) => (
           <div key={fdp.id} style={{
@@ -97,7 +97,7 @@ export const FacLearnTab = () => {
             }}>
               {fdp.perks.map((p, idx) => (
                 <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#8C4300', fontWeight: 600 }}>
-                  <CheckCircle2 size={14} color="#FF6B00" />
+                  <CheckCircle2 size={14} color="#588B71" />
                   <span>{p}</span>
                 </div>
               ))}

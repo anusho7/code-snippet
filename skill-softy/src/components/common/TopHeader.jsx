@@ -30,7 +30,7 @@ export const TopHeader = () => {
           />
           <div className="top-header__title-group">
             <h1 className="top-header__title">
-              Skill <span className="top-header__title-accent">Sync</span>
+              <span className="top-header__title-main">Skill</span> <span className="top-header__title-accent">Sync</span>
             </h1>
             <span className="top-header__tagline">Degree to Real-World Mastery</span>
           </div>

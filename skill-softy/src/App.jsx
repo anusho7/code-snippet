@@ -11,10 +11,10 @@ const MainLayout = () => {
 
   return (
     <div className="website-app-container">
-      {/* Top Header Navigation */}
+      {/* Sticky Header */}
       <TopHeader />
 
-      {/* Main Viewport Content */}
+      {/* Main Content Area */}
       <main className="website-main-content">
         <AppNavigator />
       </main>
@@ -22,7 +22,7 @@ const MainLayout = () => {
       {/* Quick Navigation Dock */}
       <BottomNavBar />
 
-      {/* Toast Notification Overlay */}
+      {/* Toast Notification Banner */}
       {toast && (
         <div className={`toast-banner ${toast.type || 'success'}`}>
           {toast.type === 'info' ? (

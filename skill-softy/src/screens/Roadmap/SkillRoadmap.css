@@ -16,14 +16,7 @@
   box-shadow: var(--shadow-sm);
 }
 
-@media (min-width: 768px) {
-  .skill-roadmap__header {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.6rem 2rem;
-  }
-}
+
 
 .skill-roadmap__title-wrap {
   flex: 1;
@@ -161,13 +154,7 @@
   grid-template-columns: 1fr;
   gap: 0.85rem;
   margin-bottom: 0.85rem;
-}
-
-@media (min-width: 640px) {
-  .roadmap-phase__nodes-grid {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 1rem;
-  }
+  width: 100%;
 }
 
 .roadmap-node-card {

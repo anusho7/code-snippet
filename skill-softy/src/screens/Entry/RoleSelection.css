@@ -36,7 +36,7 @@
 }
 
 .role-selection__title-highlight {
-  background: linear-gradient(135deg, #FF7A00 0%, #E64C00 100%);
+  background: linear-gradient(135deg, #6B9E82 0%, #3F6853 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -53,18 +53,10 @@
 /* Fix 2: Role Cards Flex / Stacking Container & 20px gap */
 .role-selection__cards-grid {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  flex-direction: column;
+  gap: 16px;
   width: 100%;
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 768px) {
-  .role-selection__cards-grid {
-    flex-direction: column;
-    gap: 20px;
-    max-width: 100%;
-  }
+  margin-bottom: 1.5rem;
 }
 
 /* Fix 3: Card Content Fitting - height: auto and adequate padding-bottom */
@@ -106,24 +98,24 @@
 }
 
 .role-card:hover::before {
-  background: linear-gradient(90deg, #FF8A00, #FF5500);
+  background: linear-gradient(90deg, #6B9E82, #4A7861);
 }
 
 .role-card--active {
   border-color: var(--color-primary);
   box-shadow: var(--shadow-orange);
-  background: #FFFDF7;
+  background: #F8FAF9;
 }
 
 .role-card--active::before {
-  background: linear-gradient(90deg, #FF8A00, #FF5500);
+  background: linear-gradient(90deg, #6B9E82, #4A7861);
 }
 
 .role-card__icon-wrap {
   width: 58px;
   height: 58px;
   border-radius: var(--radius-lg);
-  background: #FFF1E5;
+  background: #EEF4F0;
   display: flex;
   align-items: center;
   justify-content: center;

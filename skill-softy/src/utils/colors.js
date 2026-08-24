@@ -11,18 +11,18 @@ export const colors = {
   backgroundLight: '#FFFDF7',    // Lightest Cream Tint
   backgroundElevated: '#FFFFFF', // Pure White for Cards
 
-  // Brand Orange Accent (Cards, Primary Buttons, Highlights)
-  primary: '#FF6B00',           // Signature Skill Sync Orange
-  primaryHover: '#E65800',      // Deep Orange on Hover
-  primaryActive: '#CC4700',     // Active Press State
-  primaryLight: '#FFF1E5',      // Soft Orange Tint for Badges/Pills
-  primaryBorder: '#FFD3B0',     // Subtle Orange Border
+  // Brand Light Sage Green Accent
+  primary: '#588B71',           // Light Sage Green
+  primaryHover: '#4A7861',      // Deeper Sage on Hover
+  primaryActive: '#3F6853',     // Active Press State
+  primaryLight: '#EEF4F0',      // Soft Sage Tint for Badges/Pills
+  primaryBorder: '#C2D8CB',     // Subtle Sage Border
 
   // Secondary & Accents
-  accentAmber: '#FFB800',       // Glowing Amber Yellow
-  accentYellow: '#FFE853',      // Bright Highlight Yellow
-  accentPeach: '#FFA07A',       // Soft Peach
-  accentDarkOrange: '#DD4E00',  // Deep Card Background
+  accentAmber: '#7AA68B',
+  accentYellow: '#B5D4C3',
+  accentPeach: '#A8C4B4',
+  accentDarkOrange: '#3A644D',
 
   // Text Hierarchy
   textPrimary: '#1E1B18',       // Deep Dark Warm Obsidian
@@ -31,11 +31,11 @@ export const colors = {
   textLight: '#FFFFFF',         // Crisp White
 
   // Card Backgrounds
-  cardOrange: '#FF7A00',        // Vibrant Orange Card Background
-  cardOrangeGradient: 'linear-gradient(135deg, #FF8A00 0%, #FF5500 100%)',
-  cardAmberGradient: 'linear-gradient(135deg, #FFB800 0%, #FF8A00 100%)',
+  cardOrange: '#588B71',        // Light Sage Card Background
+  cardOrangeGradient: 'linear-gradient(135deg, #6B9E82 0%, #4A7861 100%)',
+  cardAmberGradient: 'linear-gradient(135deg, #7AA68B 0%, #588B71 100%)',
   cardSurface: '#FFFFFF',
-  cardSurfaceBorder: '#FFE2B8',
+  cardSurfaceBorder: '#C2D8CB',
 
   // Status & Feedback
   success: '#10B981',           // Mint Emerald
@@ -50,13 +50,13 @@ export const colors = {
   // Borders & Dividers
   border: '#F0E2C8',            // Warm Subtle Border
   borderStrong: '#E2CEAA',
-  borderHighlight: '#FF7A00',
+  borderHighlight: '#588B71',
 
   // Shadows
-  shadowSm: '0 2px 8px rgba(180, 100, 20, 0.08)',
-  shadowMd: '0 6px 20px rgba(180, 100, 20, 0.12)',
-  shadowLg: '0 12px 32px rgba(180, 100, 20, 0.16)',
-  shadowOrange: '0 8px 24px rgba(255, 107, 0, 0.35)',
+  shadowSm: '0 2px 8px rgba(88, 139, 113, 0.08)',
+  shadowMd: '0 6px 20px rgba(88, 139, 113, 0.12)',
+  shadowLg: '0 12px 32px rgba(88, 139, 113, 0.16)',
+  shadowOrange: '0 8px 24px rgba(88, 139, 113, 0.35)',
 };
 
 export default colors;

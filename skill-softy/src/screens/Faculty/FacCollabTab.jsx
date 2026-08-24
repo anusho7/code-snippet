@@ -46,8 +46,8 @@ export const FacCollabTab = () => {
       {/* Collab Cards Grid */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',
-        gap: '1.5rem'
+        gridTemplateColumns: '1fr',
+        gap: '1rem'
       }}>
         {MOCK_COLLAB_REQUESTS.map((item) => {
           const isInvited = invitedCollabs.includes(item.id);
@@ -81,7 +81,7 @@ export const FacCollabTab = () => {
                 fontSize: '0.84rem',
                 color: 'var(--color-text-muted)'
               }}>
-                <User size={14} color="#FF6B00" />
+                <User size={14} color="#588B71" />
                 <span>Speaker: <strong>{item.speaker}</strong></span>
               </div>
 

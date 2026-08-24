@@ -138,8 +138,8 @@ export const IndStudentsTab = () => {
       {/* Student Cards Grid */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-        gap: '1.5rem'
+        gridTemplateColumns: '1fr',
+        gap: '1rem'
       }}>
         {filteredStudents.map((student) => (
           <PortfolioCard key={student.id} student={student} />

@@ -11,7 +11,7 @@ export const ROLES_DATA = {
     description: 'Bridge curriculum gaps, follow interactive node roadmaps, get matched to high-growth jobs, and showcase your live portfolio.',
     badge: 'Fast-Track Career',
     icon: 'GraduationCap',
-    color: '#FF6B00',
+    color: '#588B71',
     stats: '12,400+ Students Active'
   },
   industry: {

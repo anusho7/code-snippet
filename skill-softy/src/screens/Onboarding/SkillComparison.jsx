@@ -114,7 +114,7 @@ export const SkillComparison = () => {
         <div className="matrix-column matrix-column--target">
           <div className="matrix-column__header">
             <h2 className="matrix-column__title">
-              <Zap size={18} color="#FF6B00" />
+              <Zap size={18} color="#588B71" />
               <span>Industry Demands (2026)</span>
             </h2>
             <span className="matrix-column__tag matrix-column__tag--target">
@@ -137,7 +137,7 @@ export const SkillComparison = () => {
                     style={{ width: `${item.level}%` }}
                   ></div>
                 </div>
-                <span className="skill-row__note" style={{ color: '#FF6B00', fontWeight: '600' }}>
+                <span className="skill-row__note" style={{ color: '#588B71', fontWeight: '600' }}>
                   Demanded by {item.demand}
                 </span>
               </div>

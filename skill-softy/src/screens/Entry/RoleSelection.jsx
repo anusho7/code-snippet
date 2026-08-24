@@ -33,7 +33,7 @@ export const RoleSelection = () => {
     <div className="role-selection animate-fade-in">
       {/* Hero Badge */}
       <div className="role-selection__hero-badge">
-        <Sparkles size={16} color="#FF6B00" />
+        <Sparkles size={16} color="#588B71" />
         <span>Select Your Workspace to Begin</span>
       </div>
 
@@ -96,7 +96,7 @@ export const RoleSelection = () => {
           <span><strong>100% Verified</strong> Skill Roadmaps</span>
         </div>
         <div className="role-selection__stat-item">
-          <Briefcase size={18} color="#FF6B00" />
+          <Briefcase size={18} color="#588B71" />
           <span><strong>450+</strong> Tech Companies Hiring</span>
         </div>
         <div className="role-selection__stat-item">

@@ -131,8 +131,8 @@ export const StuGetHiredTab = () => {
       {/* Jobs Grid */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-        gap: '1.5rem'
+        gridTemplateColumns: '1fr',
+        gap: '1rem'
       }}>
         {filteredJobs.map((job) => (
           <JobRoleCard key={job.id} job={job} isRecruiterView={false} />

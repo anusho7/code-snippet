@@ -75,7 +75,7 @@ export const PortfolioCard = ({ student }) => {
       {student.topProject && (
         <div className="portfolio-card__project-box">
           <div className="portfolio-card__project-title">
-            <Code2 size={15} color="#FF6B00" />
+            <Code2 size={15} color="#588B71" />
             <span>{student.topProject.name}</span>
           </div>
           <p className="portfolio-card__project-desc">

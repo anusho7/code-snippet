@@ -52,11 +52,7 @@
   margin-bottom: 2rem;
 }
 
-@media (min-width: 580px) {
-  .skill-comparison__metrics-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+
 
 .metric-card {
   background: var(--bg-surface);
@@ -107,11 +103,7 @@
   margin-bottom: 2rem;
 }
 
-@media (min-width: 820px) {
-  .skill-comparison__matrix {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+
 
 .matrix-column {
   background: var(--bg-surface);
@@ -232,7 +224,7 @@
 
 /* Call to Action Banner */
 .skill-comparison__cta-box {
-  background: linear-gradient(135deg, #FF7A00 0%, #FF4400 100%);
+  background: linear-gradient(135deg, #6B9E82 0%, #4A7861 100%);
   border-radius: var(--radius-xl);
   padding: 1.5rem 1.25rem;
   color: #FFFFFF;
@@ -243,15 +235,7 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .skill-comparison__cta-box {
-    flex-direction: row;
-    text-align: left;
-    padding: 2rem 2.25rem;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
+
 
 .skill-comparison__cta-title {
   font-size: 1.3rem;

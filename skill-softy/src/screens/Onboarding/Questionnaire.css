@@ -65,11 +65,7 @@
   margin-bottom: 2rem;
 }
 
-@media (min-width: 640px) {
-  .questionnaire__options-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 
 .option-card {
   background: var(--bg-surface);

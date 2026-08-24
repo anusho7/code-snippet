@@ -47,15 +47,15 @@ export const EventCard = ({ event }) => {
       {/* Meta Grid */}
       <div className="event-card__meta-grid">
         <div className="event-card__meta-item">
-          <Calendar size={14} color="#FF6B00" />
+          <Calendar size={14} color="#588B71" />
           <span>{event.date}</span>
         </div>
         <div className="event-card__meta-item">
-          <Clock size={14} color="#FF6B00" />
+          <Clock size={14} color="#588B71" />
           <span>{event.duration}</span>
         </div>
         <div className="event-card__meta-item">
-          <Users size={14} color="#FF6B00" />
+          <Users size={14} color="#588B71" />
           <span>{event.attendeesCount} Registered</span>
         </div>
       </div>

@@ -13,11 +13,10 @@
 
 .top-header__inner {
   width: 100%;
-  max-width: 1280px;
-  padding: 0.85rem 1.5rem;
+  padding: 0.6rem 0.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -60,15 +59,18 @@
   font-family: var(--font-heading);
   font-size: clamp(1.1rem, 4vw, 1.45rem);
   font-weight: 800;
-  color: var(--color-text-main);
   letter-spacing: -0.03em;
   display: flex;
   align-items: center;
   gap: 0.25rem;
 }
 
+.top-header__title-main {
+  color: #588B71; /* Light Sage Green */
+}
+
 .top-header__title-accent {
-  color: var(--color-primary);
+  color: #1E1B18; /* Black */
   position: relative;
 }
 
@@ -129,11 +131,9 @@
 }
 
 .top-header__actions {
-  position: absolute;
-  right: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
   flex-shrink: 0;
 }
 

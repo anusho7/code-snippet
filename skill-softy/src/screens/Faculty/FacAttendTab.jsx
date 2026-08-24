@@ -47,7 +47,7 @@ export const FacAttendTab = () => {
           alignItems: 'center',
           gap: '0.75rem'
         }}>
-          <Sparkles size={20} color="#FF6B00" />
+          <Sparkles size={20} color="#588B71" />
           <div>
             <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)' }}>Registered Sessions</div>
             <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--color-text-main)' }}>
@@ -60,8 +60,8 @@ export const FacAttendTab = () => {
       {/* Events Grid */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-        gap: '1.5rem'
+        gridTemplateColumns: '1fr',
+        gap: '1rem'
       }}>
         {facultyEvents.map((event) => (
           <EventCard key={event.id} event={event} />

@@ -58,15 +58,15 @@ export const StuStudyTab = () => {
 
       {/* Enrolled Tracks Grid */}
       <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-        <Sparkles size={18} color="#FF6B00" />
+        <Sparkles size={18} color="#588B71" />
         <span>Active Learning Tracks</span>
       </h3>
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-        gap: '1.5rem',
-        marginBottom: '2.5rem'
+        gridTemplateColumns: '1fr',
+        gap: '1rem',
+        marginBottom: '2rem'
       }}>
         {MOCK_COURSES.map((course) => {
           const isEnrolled = enrolledCourses.includes(course.id);
@@ -115,7 +115,7 @@ export const StuStudyTab = () => {
                     <div style={{
                       width: `${course.progress}%`,
                       height: '100%',
-                      background: 'linear-gradient(90deg, #FFB800, #FF5500)',
+                      background: 'linear-gradient(90deg, #6B9E82, #4A7861)',
                       borderRadius: 'var(--radius-full)'
                     }}></div>
                   </div>
