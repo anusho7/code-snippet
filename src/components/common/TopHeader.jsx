@@ -5,15 +5,19 @@ import skillSyncLogo from '../../assets/skill-sync-logo.png';
 import './TopHeader.css';
 
 export const TopHeader = () => {
-  const { role, setScreen, showToast } = useUser();
+  const { role, screen, setScreen, showToast } = useUser();
 
   const handleNotificationClick = () => {
     showToast('You have 3 new matched recommendations for your roadmap!', 'info');
   };
 
   const handleProfileClick = () => {
-    setScreen('entry');
-    showToast(`Profile (${role ? role.toUpperCase() : 'STUDENT'}): Click to switch role.`, 'info');
+    if (screen === 'roadmap') {
+      setScreen('dashboard');
+    } else {
+      setScreen('roadmap');
+      showToast('Opening your Skill Roadmap profile track!', 'info');
+    }
   };
 
   return (
@@ -36,12 +40,12 @@ export const TopHeader = () => {
 
         {/* Actions */}
         <div className="top-header__actions">
-          {/* Profile Icon Button */}
+          {/* Profile & Roadmap Icon Button */}
           <button
-            className="top-header__icon-btn top-header__profile-btn"
+            className={`top-header__icon-btn top-header__profile-btn ${screen === 'roadmap' ? 'active' : ''}`}
             onClick={handleProfileClick}
-            aria-label="User Profile"
-            title="Profile & Switch Role"
+            aria-label="Profile & Skill Roadmap"
+            title="Profile & Skill Roadmap"
           >
             <User size={18} />
           </button>

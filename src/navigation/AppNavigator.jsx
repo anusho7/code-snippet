@@ -123,45 +123,6 @@ export const AppNavigator = () => {
 
   return (
     <div className="dashboard-container animate-fade-in">
-      {/* Dashboard Sub-navigation Bar */}
-      <div className="dashboard-subnav">
-        <div className="dashboard-subnav__tabs">
-          {tabs.map((t) => {
-            const Icon = t.icon;
-            const isActive = activeTab === t.id;
-            return (
-              <button
-                key={t.id}
-                className={`dashboard-subnav__tab ${isActive ? 'active' : ''}`}
-                onClick={() => setActiveTab(t.id)}
-              >
-                <Icon size={16} />
-                <span>{t.label}</span>
-              </button>
-            );
-          })}
-        </div>
-
-        <div className="dashboard-subnav__quick-links">
-          <PrimaryButton
-            variant="ghost"
-            size="sm"
-            onClick={() => setScreen('roadmap')}
-            icon={<Map size={15} />}
-          >
-            Node Roadmap
-          </PrimaryButton>
-          <PrimaryButton
-            variant="ghost"
-            size="sm"
-            onClick={() => setScreen('comparison')}
-            icon={<Compass size={15} />}
-          >
-            Curriculum Gap
-          </PrimaryButton>
-        </div>
-      </div>
-
       {/* Main Tab Content */}
       <div className="dashboard-tab-content">
         {renderDashboardContent()}

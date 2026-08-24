@@ -24,7 +24,6 @@ export const BottomNavBar = () => {
   const studentNavItems = [
     { id: 'study', label: 'Study', icon: BookOpen, action: () => { setScreen('dashboard'); setActiveTab('study'); } },
     { id: 'get-hired', label: 'Get Hired', icon: Briefcase, action: () => { setScreen('dashboard'); setActiveTab('get-hired'); } },
-    { id: 'roadmap', label: 'Roadmap', icon: Map, isScreen: true, screenName: 'roadmap', action: () => setScreen('roadmap') },
     { id: 'attend', label: 'Attend', icon: Calendar, action: () => { setScreen('dashboard'); setActiveTab('attend'); } }
   ];
 
