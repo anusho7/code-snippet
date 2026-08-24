@@ -1,0 +1,69 @@
+.app-navigator {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dashboard-subnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  padding: 0.5rem 0.6rem;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.dashboard-subnav__tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.dashboard-subnav__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dashboard-subnav__tab:hover {
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.dashboard-subnav__tab.active {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.35);
+}
+
+.dashboard-subnav__quick-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 680px) {
+  .dashboard-subnav__quick-links {
+    display: none;
+  }
+}

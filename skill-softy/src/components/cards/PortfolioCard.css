@@ -1,0 +1,175 @@
+.portfolio-card {
+  background: var(--bg-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card:hover {
+  border-color: var(--color-primary-border);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.portfolio-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.portfolio-card__avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.portfolio-card__avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  border: 2px solid var(--color-primary-light);
+}
+
+.portfolio-card__online-dot {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 12px;
+  height: 12px;
+  background: var(--color-success);
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.portfolio-card__info {
+  flex: 1;
+}
+
+.portfolio-card__name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.portfolio-card__name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+}
+
+.portfolio-card__match-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: #FFF0C2;
+  color: #8C4300;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  border: 1px solid #F8D88E;
+}
+
+.portfolio-card__college {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.portfolio-card__meta-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--color-text-subtle);
+}
+
+.portfolio-card__cgpa {
+  background: var(--bg-main);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.portfolio-card__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.portfolio-card__skill-pill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--bg-main);
+  color: var(--color-text-main);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+}
+
+.portfolio-card__project-box {
+  background: #FFFDF9;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.85rem;
+}
+
+.portfolio-card__project-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.portfolio-card__project-desc {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-card__project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.portfolio-card__project-tag {
+  font-size: 0.7rem;
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.portfolio-card__github-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--color-text-subtle);
+  padding-top: 0.35rem;
+  border-top: 1px dashed var(--color-border);
+}
+
+.portfolio-card__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: auto;
+}
