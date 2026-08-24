@@ -7,8 +7,21 @@ export const UserProvider = ({ children }) => {
   // Current active role: 'student' | 'industry' | 'faculty' | null
   const [role, setRole] = useState('student');
 
+  // Demo Student Profile state for Nihar
+  const [currentUser, setCurrentUser] = useState({
+    name: 'Nihar',
+    fullName: 'Nihar Achari',
+    degree: 'B.Tech Computer Science & Engineering',
+    year: '3rd Year (2026 Batch)',
+    college: 'RV College of Engineering, Bengaluru',
+    email: 'nihar.achari@student.edu',
+    cgpa: '9.2 / 10',
+    verifiedScore: 88,
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80'
+  });
+
   // Screen flow: 'entry' | 'onboarding' | 'comparison' | 'roadmap' | 'match' | 'dashboard'
-  const [screen, setScreen] = useState('entry');
+  const [screen, setScreen] = useState('dashboard');
 
   // Active Dashboard Tab based on active role
   // Student: 'study' | 'get-hired' | 'attend'
@@ -153,6 +166,8 @@ export const UserProvider = ({ children }) => {
   const value = {
     role,
     setRole,
+    currentUser,
+    setCurrentUser,
     screen,
     setScreen,
     activeTab,

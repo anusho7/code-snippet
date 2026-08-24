@@ -9,19 +9,14 @@ import {
   ArrowRight,
   Code2,
   Compass,
+  BookOpen,
   CheckCircle2,
-  Lock
+  Layers
 } from 'lucide-react';
 import './SkillRoadmap.css';
 
 export const SkillRoadmap = () => {
   const { completedNodes, toggleNodeCompletion, setScreen, showToast } = useUser();
-
-  // Calculate overall metrics
-  const allNodes = ROADMAP_DATA.phases.flatMap(p => p.nodes);
-  const totalNodesCount = allNodes.length;
-  const completedCount = allNodes.filter(n => completedNodes[n.id]).length;
-  const percentDone = Math.round((completedCount / totalNodesCount) * 100);
 
   const handleNodeClick = (nodeId, nodeLabel) => {
     toggleNodeCompletion(nodeId);
@@ -38,27 +33,123 @@ export const SkillRoadmap = () => {
           </div>
           <h1 className="skill-roadmap__title">{ROADMAP_DATA.title}</h1>
           <p className="skill-roadmap__subtitle">
-            Curated 16-Week Progressive Milestone Track with Hands-on Projects & Direct Referral Badges
+            Curated 16-Week Progressive Milestone Track designed to bridge traditional college academics with high-demand industry skills.
           </p>
         </div>
 
-        <div className="skill-roadmap__overall-progress">
-          <div className="skill-roadmap__progress-circle-val">{percentDone}%</div>
-          <div className="skill-roadmap__progress-info">
-            <span className="skill-roadmap__progress-label">Roadmap Progress</span>
-            <span className="skill-roadmap__progress-count">
-              {completedCount} of {totalNodesCount} Milestones Verified
-            </span>
+        <PrimaryButton
+          variant="primary"
+          size="md"
+          onClick={() => setScreen('match')}
+          icon={<Compass size={16} />}
+        >
+          View Matched Roles
+        </PrimaryButton>
+      </div>
+
+      {/* Difference Between Academic Skills & Required Latest Technical Skills */}
+      <div className="skill-gap-comparison">
+        <div className="skill-gap-comparison__header">
+          <h2 className="skill-gap-comparison__title">
+            Academic Curriculum vs. Required Technical Skills
+          </h2>
+          <p className="skill-gap-comparison__subtitle">
+            Highlighting the difference between traditional college syllabus and modern 2026 industry technical requirements.
+          </p>
+        </div>
+
+        <div className="skill-gap-comparison__grid">
+          {/* Academic Skills */}
+          <div className="skill-gap-col skill-gap-col--academic">
+            <div className="skill-gap-col__header">
+              <div className="skill-gap-col__icon-wrap academic-icon">
+                <BookOpen size={18} />
+              </div>
+              <div>
+                <h3 className="skill-gap-col__title">Academic Skills</h3>
+                <span className="skill-gap-col__subtitle">Traditional College Syllabus</span>
+              </div>
+            </div>
+            <ul className="skill-gap-list">
+              <li>
+                <span className="gap-bullet gap-bullet--amber"></span>
+                <div>
+                  <strong>Theory & Core Fundamentals</strong>
+                  <p>C, C++, Java Syntax, OOPs Principles, Manual Memory concepts</p>
+                </div>
+              </li>
+              <li>
+                <span className="gap-bullet gap-bullet--amber"></span>
+                <div>
+                  <strong>Relational Databases Theory</strong>
+                  <p>ER Diagrams, Normalization theory & basic SQL queries</p>
+                </div>
+              </li>
+              <li>
+                <span className="gap-bullet gap-bullet--amber"></span>
+                <div>
+                  <strong>Classic Systems Architecture</strong>
+                  <p>Monolithic Desktop Applications & basic static HTML/CSS</p>
+                </div>
+              </li>
+              <li>
+                <span className="gap-bullet gap-bullet--amber"></span>
+                <div>
+                  <strong>OS & Networking Concepts</strong>
+                  <p>Process Scheduling algorithms & TCP/IP OSI model theory</p>
+                </div>
+              </li>
+            </ul>
           </div>
 
-          <PrimaryButton
-            variant="primary"
-            size="sm"
-            onClick={() => setScreen('match')}
-            icon={<Compass size={16} />}
-          >
-            Matched Roles
-          </PrimaryButton>
+          {/* Divider Badge */}
+          <div className="skill-gap-divider">
+            <span className="skill-gap-tag">CURRICULUM GAP</span>
+            <ArrowRight size={18} className="skill-gap-arrow" />
+          </div>
+
+          {/* Required Technical Skills */}
+          <div className="skill-gap-col skill-gap-col--industry">
+            <div className="skill-gap-col__header">
+              <div className="skill-gap-col__icon-wrap industry-icon">
+                <Code2 size={18} />
+              </div>
+              <div>
+                <h3 className="skill-gap-col__title">Required Technical Skills</h3>
+                <span className="skill-gap-col__subtitle">2026 Industry Standard</span>
+              </div>
+            </div>
+            <ul className="skill-gap-list">
+              <li>
+                <span className="gap-bullet gap-bullet--green"></span>
+                <div>
+                  <strong>Modern Reactive Front-End</strong>
+                  <p>React 19, TypeScript, Next.js App Router & Atomic Design Systems</p>
+                </div>
+              </li>
+              <li>
+                <span className="gap-bullet gap-bullet--green"></span>
+                <div>
+                  <strong>Scalable Backend & ORM Data Modeling</strong>
+                  <p>Node.js microservices, PostgreSQL with Prisma ORM & Redis caching</p>
+                </div>
+              </li>
+              <li>
+                <span className="gap-bullet gap-bullet--green"></span>
+                <div>
+                  <strong>Cloud Infra & CI/CD Pipelines</strong>
+                  <p>Docker containerization, AWS ECS/S3 & GitHub Actions deployment</p>
+                </div>
+              </li>
+              <li>
+                <span className="gap-bullet gap-bullet--green"></span>
+                <div>
+                  <strong>AI & Production System Design</strong>
+                  <p>LLM Integrations, Vector Search (RAG) & Distributed Load Balancing</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
